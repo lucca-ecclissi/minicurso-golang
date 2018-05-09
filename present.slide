@@ -1,0 +1,174 @@
+Golang
+Minicurso de Golang
+15:04 9 May 2018
+Tags: foo, bar, baz
+
+Lucca Ecclissi
+Desenvolvedor, Lumminy
+lucca@lumminy.com
+https://github.com/lucca-ecclissi
+@lecclissi
+
+* Sobre mim
+
+- Experiência
+    Cursando Análise e Desenvolvimento de Sistemas pela FATEC de Indaiatuba
+    Trabalhando a 1 ano como desenvolver na empresa Lumminy Consultoria e Serviços.
+    Técnico em Sistema da Informação pela FIEC 
+
+- Áreas de Interesse
+    Desenvolvimento
+    Internet das Coisas
+    Entusiasta em Segurança da informação e em Análises de dados
+
+- Contatos
+    lucca@lumminy.com
+    https://github.com/lucca-ecclissi
+    @lecclissi
+
+
+* Introdução a Golang.
+
+- História 
+    Linguagem Open Source criada em 2009
+    Rob Pike e Ken Thompson
+
+- Por que usar?
+    Leve 
+    Garbage Collector
+    Concorrência
+
+- Quem usa?
+    Globo                       Uber
+    Dropbox                     Twitter
+    OpenShift                   Docker
+
+- Comunidade 
+    Go-br
+
+* Configuração do Ambiente.
+
+- Instalar
+.link https://golang.org/dl/ Download pelo link
+
+- Variaveis de Ambiente 
+    GOROOT
+    PATH
+    GOPATH
+
+- Testar
+    go version
+    git --version
+
+* Criando Primeiro Projeto
+
+- Workspace
+    bin - Essa pasta possui os arquivos compilados
+    pkg - Essa pasta possui os arquivos compilados de acordo com o seu SO (Sistema Operacional)
+    src - Essa pasta possui todos seus códigos fontes de projetos Go ou demais linguagens ...
+
+- Olá mundo
+
+.code ./exemplos/hello-word/main.go /^func main/,/^}/
+
+* Comandos Básicos
+
+    go fmt ola_mundo.go - identa seu código no padrão go
+
+    go run --work ola_mundo.go - roda o código go
+
+    go build ola_mundo.go - compila seu código go
+
+    go get https://github.com/go-br/rotateString
+
+* Pacotes
+
+- Github
+- Nomes para chamadas 
+
+.code ./exemplos/package/package.go 
+
+* Variáveis.
+    
+- bool
+    
+- string
+    
+- int int8 int16 int32 int64 uint uint8 uint16 uint32 uint64 uintptr
+    
+- byte = uint8
+    
+- rune = int32 e é usada para armazenar Unicode
+    
+- float32 float64
+    
+- complex64 complex128
+
+* Laços
+
+-  No GO, só existe o for.
+
+.code ./exemplos/for/for.go /^\tvalor := 0/,/}/
+
+.code ./exemplos/for/for.go /^\tpotato/,/}/
+
+.code ./exemplos/for/for.go /^//Pode-se testar/,/}/,/}/
+
+* Funções
+
+- Retorno multiplo 
+.code ./exemplos/func/func.go /^// Retorno duplo/,/}/
+
+- Retorno assinado
+.code ./exemplos/func/func.go /^// Retorno assinado/,/}/
+
+- Parâmetros por padrão
+
+- Ponteiros
+
+* Switch
+.code ./exemplos/switch/switch.go /^func main/,/^}/
+
+* Struct
+
+- Coleção de campos 
+.code ./exemplos/struct/struct.go /^type Aluno/,/}/
+
+- Exemplo com tags
+.code ./exemplos/struct/struct.go /^type Localidade/,/}/
+
+* Interface
+
+- Contrato 
+.code ./exemplos/interface/interface.go /^type geometria /,/}/
+
+.code ./exemplos/interface/interface.go /^func medir/,/}/,/^}/
+
+* Defer
+
+- Chamada no fim da execução 
+.code ./exemplos/defer/defer.go
+
+* 
+
+.image images/boraprogramar.jpg  _ 1000
+
+* Goroutines
+
+.code ./exemplos/goroutines/goroutines.go
+
+* Channels
+
+.code ./exemplos/channel/channels.go /^func printValue/,/^}/,/^}/
+
+* Projeto
+
+- Montar um sistema que envia um email determinada hora informando como está a memoria do pc.
+
+
+* Referências 
+
+.link https://tableless.com.br/por-que-utilizar-gogolang-no-seu-backend/ Tableless
+.link https://github.com/go-br/estudos Comunidade Br
+.link http://goporexemplo.golangbr.org Exemplos
+.link https://www.youtube.com/watch?v=WxggrKZLZlk imagem
