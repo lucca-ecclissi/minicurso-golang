@@ -1,6 +1,7 @@
 # Minicurso Golang - FATEC Indaiatuba
 
 O curso tem como tópicos: 
+
     - Introdução a Golang.
     - Configuração do Ambiente.
     - Criando Primeiro Projeto.
